@@ -107,7 +107,7 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 554px) {
   .weather-card .container {
-    width: 86%;
+    width: 100%;
   }
   .weather-card-row .col {
     width: 86%;
