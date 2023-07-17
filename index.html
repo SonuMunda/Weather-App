@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+    <title>Weather Guide</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google-fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="getWeather()">
+    <section class="weather-card">
+      <div class="container">
+        <div class="card-header m-4">
+          <div class="weather-search">
+            <form class="search-form">
+              <input
+                type="text"
+                name="search-input"
+                placeholder="Search for a city"
+              />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="weather-card-center center flex-col">
+          <div id="city" class="text-2xl text-center"></div>
+          <div id="date-time" class="center m-4">
+            <!-- Date and time information will be dynamically inserted here -->
+          </div>
+
+          <div id="weather-type" class="m-2"></div>
+
+          <div id="weather-icon" class="text-4xl m-2">
+            <!-- Weather icon will be dynamically inserted here -->
+          </div>
+
+          <div id="temperature" class="text-2xl text-center"></div>
+
+          <div id="visibility" class="flex text-sm mb-4">
+            <!-- Visibility information will be dynamically inserted here -->
+          </div>
+
+          <div class="weather-card-bottom">
+            <div class="weather-card-row">
+              <div class="col">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div class="col-details">
+                  <p>Feels Like</p>
+                  <p id="feelslike"></p>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="col-details">
+                  <p>Humidity</p>
+                  <p id="humidity"></p>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-wind"></i>
+                <div class="col-details">
+                  <p>Wind</p>
+                  <p id="wind-speed"></p>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div class="col-details">
+                  <p>Pressure</p>
+                  <p id="pressure"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TailWind Css Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

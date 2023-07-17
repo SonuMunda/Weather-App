@@ -1,0 +1,115 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family for the entire body */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Center content vertically and horizontally */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the weather card section */
+.weather-card {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the weather card container */
+.weather-card .container {
+  width: 480px;
+  background-color: #202020;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Styling for the card header */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the search form */
+.search-form {
+  position: relative;
+}
+
+/* Styling for the search input */
+.search-form input {
+  height: 32px;
+  width: 240px;
+  border-radius: 6px;
+  background-color: #313131;
+  color: white;
+  outline: none;
+  border: none;
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+/* Styling for the search button */
+.search-form button {
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+/* Styling for the weather card center section */
+.weather-card-center {
+  margin-top: 2rem;
+}
+
+/* Styling for the date and time section */
+#date-time {
+  word-spacing: 4px;
+}
+
+/* Styling for the weather card row section */
+.weather-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Styling for the icons in the weather card row */
+.weather-card-row .col i {
+  padding: 1rem;
+}
+
+/* Styling for each column in the weather card row */
+.weather-card-row .col {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0.5rem;
+  background-color: #313131;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 554px) {
+  .weather-card .container {
+    width: 86%;
+  }
+  .weather-card-row .col {
+    width: 86%;
+  }
+}
